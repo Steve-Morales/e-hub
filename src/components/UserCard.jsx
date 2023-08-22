@@ -1,6 +1,5 @@
 // UserCard.js
-import React, { useState, useEffect } from "react";
-import { fetchRandomUserData } from "./api";
+import React, { useState } from "react";
 
 export default function UserCard() {
   const [user, setUser] = useState({
@@ -8,19 +7,6 @@ export default function UserCard() {
     profile_picture: "https://placehold.co/90x90",
     profile_img: "https://placehold.co/325x300",
   });
-
-  useEffect(() => {
-    async function getRandomUserData() {
-      const data = await fetchRandomUserData();
-      setUser({
-        name: `${data.name.first} ${data.name.last}`,
-        profile_picture: data.picture.large,
-        profile_img: "https://placehold.co/325x300",
-      });
-    }
-
-    getRandomUserData();
-  }, []);
 
 
   return (

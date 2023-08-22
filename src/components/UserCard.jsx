@@ -8,9 +8,9 @@ export default function UserCard() {
         profile_img: "sample_snapshot.png",
     });
 
-
     return (
-        <div className="relative">
+        <div
+        className="relative hover:blur-sm transition duration-500 ease-in-out">
             {/* Spacer for User Image */}
             <div className="h-5"></div>
 
@@ -48,6 +48,9 @@ export default function UserCard() {
                     <h3 className="text-xl font-extrabold">{user.name}</h3>
                 </div>
             </div>
+
+            {/* Dark Overlay */}
+            <div className="rounded-3xl top-0 w-full h-full bg-black absolute opacity-0 hover:opacity-50 transition duration-500 ease-in-out"></div>
         </div>
     );
 }

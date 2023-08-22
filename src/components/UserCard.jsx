@@ -1,7 +1,7 @@
 // UserCard.js
 import React from "react";
 
-export default function UserCard() {
+export default function UserCard({name, profile_picture, profile_img}) {
     return (
         <div className="relative">
             {/* Spacer for User Image */}
@@ -15,21 +15,23 @@ export default function UserCard() {
                 {/* User Image */}
                 <div className="absolute top-0 w-fit border-2 rounded-full border-indigo-600 bg-white">
                     <img
-                        className="rounded-full"
-                        src="https://placehold.co/90x90"
+                        className="rounded-full object-contain"
+                        src={profile_picture? profile_picture : "https://placehold.co/90x90"}
                         alt="User"
+                        style={{ maxWidth: "90px", maxHeight: "90px" }} // object-contain works, but this should guarentee
                     />
                 </div>
 
                 <div>
                     <img
-                        src="https://placehold.co/325x300"
-                        className="rounded-xl"
+                        src={profile_img? profile_img : "https://placehold.co/325x300"}
+                        className="rounded-xl object-contain"
                         alt="User Card"
+                        style={{ maxWidth: "325px", maxHeight: "300px" }} // object-contain works, but this should guarentee
                     />
                 </div>
                 <div>
-                    <h3 className="font-extrabold">John Doe</h3>
+                    <h3 className="font-extrabold">{name? name: "John Doe"}</h3>
                 </div>
             </div>
         </div>

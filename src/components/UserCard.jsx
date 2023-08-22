@@ -5,7 +5,7 @@ export default function UserCard() {
   const [user, setUser] = useState({
     name: "John Doe",
     profile_picture: "https://placehold.co/90x90",
-    profile_img: "https://placehold.co/325x300",
+    profile_img: "https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2018/05/Gradient-Round-Up-Featured-Image.jpg?w=960&h=600&crop=1",
   });
 
 
@@ -27,11 +27,11 @@ export default function UserCard() {
             style={{ maxWidth: "90px", maxHeight: "90px" }}
           />
         </div>
-
+{/* TODO: add blur to image and make object-contain */}
         <div>
           <img
             src={user.profile_img}
-            className="rounded-xl object-contain"
+            className="rounded-xl object-fill"
             alt="User Card"
             style={{ maxWidth: "325px", maxHeight: "300px", minWidth: "325px", minHeight: "300px" }}
           />

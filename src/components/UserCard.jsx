@@ -16,7 +16,7 @@ export default function UserCard() {
 
             {/* User Card */}
             <div
-                className="flex flex-col items-center justify-center w-fit m-4 border-2 rounded-xl border-indigo-600"
+                className="shadow-xl bg-white flex flex-col items-center justify-center w-fit m-4 border-2 rounded-xl border-gray-600"
             >
                 <div className="bg-white rounded-xl p-4 relative">
                     <div className="absolute inset-0 z-0">
@@ -36,7 +36,7 @@ export default function UserCard() {
                     </div>
                 </div>
                 {/* User Image */}
-                <div className="absolute top-0 w-fit border-2 rounded-full border-indigo-600 bg-white">
+                <div className="absolute top-0 w-fit border-2 rounded-full border-gray-600 bg-white">
                     <img
                         className="rounded-full object-contain"
                         src={user.profile_picture}
@@ -51,6 +51,8 @@ export default function UserCard() {
 
             {/* Dark Overlay */}
             <div className="rounded-3xl top-0 w-full h-full bg-black absolute opacity-0 hover:opacity-50 transition duration-500 ease-in-out"></div>
+
+            {/* <a href="#" className="absolute top-0 text-rose-600">Sample Link</a> */}
         </div>
     );
 }

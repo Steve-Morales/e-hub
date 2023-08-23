@@ -31,7 +31,8 @@ function App() {
       </div>
 
       {/* User Cards */}
-      <div className="flex items-center justify-center">
+      {/* TODO: As user scrolls down, the ending gradient color should be gray-800*/}
+      <div className="flex items-center justify-center bg-gradient-to-b from-white to-gray-800">
         <div className="grid grid-cols-2 gap-y-32 gap-x-48">
           <UserCard />
           <UserCard />

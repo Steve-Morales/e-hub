@@ -6,8 +6,8 @@ export default function Profile() {
     return (
         <>
             <Navbar />
-
-            <div className="relative flex flex-col items-center justify-center"> {/*center all the "main items"*/}
+            
+            <div className="relative flex flex-col items-center justify-center "> {/*center all the "main items"*/}
                 <div className="relative w-4/6"> {/* items within me are relative to me */}
                     <div className="absolute inset-0 z-0">
                         <img
@@ -26,17 +26,17 @@ export default function Profile() {
 
                 </div>
 
-                <div className="shadow-black shadow-lg absolute -bottom-32 w-fit border-2 rounded-full border-gray-600 bg-white">
+                <div className="shadow-black shadow-lg absolute -bottom-16 w-fit border-2 rounded-full border-gray-600 bg-white">
                     <img
                         className="rounded-full object-contain"
-                        src="https://placehold.co/320x320"
+                        src="https://placehold.co/220x220"
                         alt="User"
-                        style={{ maxWidth: "320px", maxHeight: "320px" }}
+                        style={{ maxWidth: "220px", maxHeight: "220px" }}
                     />
                 </div>
             </div>
 
-            <section>
+            <section className="">
                 <Tabs/>
             </section>
 

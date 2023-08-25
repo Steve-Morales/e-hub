@@ -1,10 +1,17 @@
 import React, { useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ProjectCard from "../components/ProjectCard";
 
-export default function Profile() {
+export default function Profile({match}) {
+    console.log("Match", match)
+    const { userId } = useParams(); // Use the correct parameter name here
+    // const userId = match.params.userId; // Extract userId from the route parameter
+
+    // Fetch user data based on userId (you can replace this with your data fetching logic)
+    const userData = {};
 
     useEffect(() => {
         // Scroll down to hide the navbar on page load

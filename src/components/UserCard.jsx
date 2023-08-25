@@ -1,5 +1,6 @@
 // UserCard.js
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function UserCard() {
     const [user, setUser] = useState({
@@ -8,9 +9,13 @@ export default function UserCard() {
         profile_img: "sample_snapshot.png",
     });
 
+    let navigate = useNavigate();
+
     return (
         <div
-        className="relative hover:blur-sm transition duration-500 ease-in-out">
+        className="relative hover:cursor-pointer hover:blur-sm transition duration-500 ease-in-out"
+        onClick={()=>{navigate(`../profile/${user.name}`);}}
+        >
             {/* Spacer for User Image */}
             <div className="h-5"></div>
 

@@ -1,11 +1,19 @@
+import React, {useState} from 'react';
+
 import { FaTimes } from 'react-icons/fa';
 
 export default function ProfileModal() {
+    const [exit, setExit] = useState(false);
+    
     return (
         <>
-            <div className="rounded-lg shadow-lg h-5/6 w-5/6 p-4">
+
+            <div className={`rounded-lg shadow-lg h-5/6 w-5/6 p-4 ${exit? "animate-jump-out" : "block animate-jump-in" }`}>
                 <div className="flex flex-col">
-                    <div className="flex flex-row items-center justify-end hover:cursor-pointer pb-2">
+                    <div 
+                    className="flex flex-row items-center justify-end hover:cursor-pointer pb-2"
+                    onClick={()=>{setExit(true);}}
+                    >
                         <FaTimes />
                     </div>
 

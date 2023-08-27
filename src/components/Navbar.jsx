@@ -9,6 +9,7 @@ export default function Navbar() {
                 <Link to="/users" className="mx-2 text-gray-700 hover:text-gray-900 hover:scale-110 transform transition">Users</Link>
                 <Link to="/profile" className="mx-2 text-gray-700 hover:text-gray-900 hover:scale-110 transform transition">Profile</Link>
                 <Link to="/settings" className="mx-2 text-gray-700 hover:text-gray-900 hover:scale-110 transform transition">Settings</Link>
+                <Link to="/login" className="mx-2 text-gray-700 hover:text-gray-900 hover:scale-110 transform transition">Login</Link>
             </nav>
         </>
     );

@@ -7,6 +7,9 @@ import Profile from './views/Profile';
 import Settings from './views/Settings';
 import Login from './views/Login';
 
+// FIXME: delete this link
+import ProfileModal from './components/ProfileModal';
+
 function App() {
   return (
     <Router>
@@ -17,6 +20,7 @@ function App() {
         <Route path="/profile/:userId" element={<Profile />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/modal" element={<ProfileModal />} />
       </Routes>
     </Router>
   );

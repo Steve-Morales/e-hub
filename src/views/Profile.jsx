@@ -62,18 +62,18 @@ export default function Profile({match}) {
 
                 </div>
 
-                <div className="shadow-black shadow-lg absolute -bottom-20 w-fit border-2 rounded-full border-gray-600 bg-white">
+                <div className="shadow-black shadow-lg absolute sm:-bottom-16 md:-bottom-20 lg:-bottom-24 w-fit border-2 rounded-full border-gray-600 bg-white">
                     <img
-                        className="rounded-full object-contain"
+                        className="rounded-full object-contain sm:h-24 md:h-32 lg:h-40"
                         src="https://placehold.co/180x180"
                         alt="User"
-                        style={{ maxWidth: "150px", maxHeight: "150px" }}
+                        // style={{ maxWidth: "150px", maxHeight: "150px" }}
                     />
                 </div>
             </div>
 
             <div className="mt-20 flex items-center justify-center bg-gradient-to-b from-white to-gray-800">
-                <div className="grid grid-cols-2 gap-y-32 gap-x-48">
+                <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-y-32 gap-x-48">
                     <ProjectCard />
                     <ProjectCard />
                     <ProjectCard />

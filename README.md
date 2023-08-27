@@ -1,3 +1,11 @@
+# TODOs
+### Overall 
+- ensure all pages and components are responsive
+- create a register page
+
+### views/Login.jsx
+- update `href` value for register link with corresponding page
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

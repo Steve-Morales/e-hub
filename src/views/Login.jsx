@@ -8,7 +8,7 @@ export default function Login(){
             
             <div className="flex flex-col items-center justify-center w-screen h-[calc(100vh-3rem)] bg-[url('https://placehold.co/1920x1080')] bg-cover">
 
-                <div className="bg-gray-800 border border-transparent rounded-lg shadow-md w-2/3 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 h-3/5 sm:h-2/3 flex flex-col items-center justify-center">
+                <div className="bg-gray-800 border border-transparent rounded-3xl shadow-md w-2/3 sm:w-4/6 h-3/5 sm:h-2/3 flex flex-col items-center justify-center">
 
                     <form className="rounded flex flex-col items-start justify-center">
                         <div className="mb-8">

@@ -22,8 +22,8 @@ export default function Login(){
                         </div>
                         <div className="mb-7">
                             <label className=" text-white font-bold text-sm block mb-2" for="password">Password</label>
-                            <input type="text" id="password" placeholder="*********"
-                            className="rounded shadow-md border block">
+                            <input type="password" id="password" placeholder="*********"
+                            className="rounded shadow-md border block text-hidde">
                             </input>
                             <a className="text-sm text-blue-300 font-bold  hover:text-blue-100 transition-colors duration-300" href="/#">forgot password?</a>
                         </div>

@@ -47,13 +47,13 @@ export default function Profile({match}) {
                 <div className="relative w-full"> {/* items within me are relative to me */}
                     <div className="absolute inset-0 z-0">
                         <img
-                            className="object-cover blur-md"
+                            className="object-cover blur-md w-full"
                             src="https://placehold.co/1920x300"
                         />
                     </div>
                     <div className="relative z-1">
                         <img
-                            className="object-contain"
+                            className="object-contain w-full"
                             src="https://placehold.co/1920x300"
                         />
                     </div>

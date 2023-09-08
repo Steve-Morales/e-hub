@@ -2,6 +2,7 @@
 ### Overall 
 - ensure all pages and components are responsive
 - create a register page
+- create CRUD using MongoDB (https://www.mongodb.com/languages/mern-stack-tutorial)
 
 ### views/Login.jsx
 - update `href` value for register link with corresponding page

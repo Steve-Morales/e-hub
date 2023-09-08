@@ -4,8 +4,9 @@ import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ProjectCard from "../components/ProjectCard";
+import ProfileModal from "../components/ProfileModal";
 
-export default function Profile({match}) {
+export default function Profile({ match }) {
     console.log("Match", match)
     const { userId } = useParams(); // Use the correct parameter name here
     // const userId = match.params.userId; // Extract userId from the route parameter
@@ -34,16 +35,20 @@ export default function Profile({match}) {
         requestAnimationFrame(scroll);
     }, []);
 
-
     return (
         <>
-        <div id="navbar" className="relative">
+            <div id="navbar" className="relative">
 
-        <Navbar />
+                <Navbar />
 
-        </div>
+
+            </div>
 
             <div className="relative flex flex-col items-center justify-center "> {/*center all the "main items"*/}
+                
+                {/* <div className="fixed inset-0 modal-overlay top-0 w-screen h-screen flex flex-col items-center justify-center z-50">
+                    <ProfileModal />
+                </div> */}
                 <div className="relative w-full"> {/* items within me are relative to me */}
                     <div className="absolute inset-0 z-0">
                         <img
@@ -62,12 +67,16 @@ export default function Profile({match}) {
 
                 </div>
 
-                <div className="shadow-black shadow-lg absolute sm:-bottom-16 md:-bottom-20 lg:-bottom-24 w-fit border-2 rounded-full border-gray-600 bg-white">
+                <div
+                    onClick={() => {
+
+                    }}
+                    className="shadow-black shadow-lg absolute sm:-bottom-16 md:-bottom-20 lg:-bottom-24 w-fit border-2 rounded-full border-gray-600 bg-white">
                     <img
                         className="rounded-full object-contain sm:h-24 md:h-32 lg:h-40"
                         src="https://placehold.co/180x180"
                         alt="User"
-                        // style={{ maxWidth: "150px", maxHeight: "150px" }}
+                    // style={{ maxWidth: "150px", maxHeight: "150px" }}
                     />
                 </div>
             </div>

@@ -8,7 +8,7 @@ export default function ProfileModal() {
     return (
         <>
 
-            <div className={`rounded-lg shadow-lg h-5/6 w-5/6 p-4 ${exit? "animate-jump-out" : "block animate-jump-in" }`}>
+            <div className={`bg-white rounded-lg shadow-lg h-5/6 w-5/6 p-4 ${exit? "animate-jump-out" : "block animate-jump-in" }`}>
                 <div className="flex flex-col">
                     <div 
                     className="flex flex-row items-center justify-end hover:cursor-pointer pb-2"
